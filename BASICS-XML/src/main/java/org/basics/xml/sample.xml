@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<persons>
+    <person depends="0">
+        <firstname>anita</firstname>
+        <lastname>onnuvel</lastname>
+        <age>26</age>
+        <sex>female</sex>
+    </person>
+    <person depends="1">
+        <firstname>archanaa</firstname>
+        <lastname>shankar karthik</lastname>
+        <age>1</age>
+        <sex>female</sex>
+    </person>
+</persons>    

@@ -1,0 +1,14 @@
+###########################
+Set Java Path
+###########################
+Open a command prompt and set your java version in the path
+
+###########################
+Generate Stubs
+###########################
+rmic <path_to_bin>/org.basics.rmi.CalculatorImpl
+
+###########################
+Start RMI Naming Service
+###########################
+start rmiregistry <port_number_defaults_to_1099> 
