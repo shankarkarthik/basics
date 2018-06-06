@@ -29,15 +29,15 @@ public class NestedClassTest {
      */
     public static void main( String[] args ) {
         // Not the position of new operator
-        OuterClass.NestedStaticClass lNestedStaticClass = new OuterClass.NestedStaticClass(); 
-        lNestedStaticClass.printNestedStaticClassVariable();
+        OuterClass.NestedStaticClass nestedStaticClass = new OuterClass.NestedStaticClass();
+        nestedStaticClass.printNestedStaticClassVariable();
         
-        OuterClass lOuterClass = new OuterClass();
+        OuterClass outerClass = new OuterClass();
         // Not the position of new operator
-        OuterClass.NestedInnerClass lNestedInnerClass = lOuterClass.new NestedInnerClass(); 
+        OuterClass.NestedInnerClass lNestedInnerClass = outerClass.new NestedInnerClass();
         lNestedInnerClass.printNestedInnerClassVariable();
-        
-        lOuterClass.methodLocalClass( 45 );
+
+        outerClass.methodLocalClass( 45 );
     }
 
 }

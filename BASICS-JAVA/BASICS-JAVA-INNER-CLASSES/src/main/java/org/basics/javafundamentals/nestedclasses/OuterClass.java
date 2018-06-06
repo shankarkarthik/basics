@@ -24,9 +24,9 @@ package org.basics.javafundamentals.nestedclasses;
  */
 public class OuterClass {
     
-    int mOuterClassVariable = 20;
+    int outerClassVariable = 20;
     
-    static int mStaticOuterClassVariable = 40;
+    static int staticOuterClassVariable = 40;
     
     /**
      * 
@@ -34,10 +34,10 @@ public class OuterClass {
      *
      */
     public static class NestedStaticClass {
-        int mNestedStaticClassVariable = mStaticOuterClassVariable + 1;
+        int nestedStaticClassVariable = staticOuterClassVariable + 1;
         
         public void printNestedStaticClassVariable(){
-            System.out.println( mNestedStaticClassVariable );
+            System.out.println( nestedStaticClassVariable );
         }
     }
     
@@ -47,24 +47,24 @@ public class OuterClass {
      *
      */
     public class NestedInnerClass {
-        int mNestedInnerClassVariable = mOuterClassVariable + 1;
+        int nestedInnerClassVariable = outerClassVariable + 1;
         
         public void printNestedInnerClassVariable(){
-            System.out.println( mNestedInnerClassVariable );
+            System.out.println( nestedInnerClassVariable );
         }
     }
 
     
-    public void methodLocalClass( final int pMethodLocalFormalParameter ){
+    public void methodLocalClass( final int methodLocalFormalParameter ){
         
-        int lMethodLocalVariable = 100;
-        final int lMethodLocalVariableFinal = 100;
+        int methodLocalVariable = 100;
+        final int methodLocalVariableFinal = 100;
         
         class LocalClass {
             public int mPublicLocalClassVariable = 1;
             private int mPrivateLocalClassVariable = 2;
-            private int mPrivateLocalClassVariable2 = pMethodLocalFormalParameter;
-            private int mPrivateLocalClassVariable3 = lMethodLocalVariableFinal;
+            private int mPrivateLocalClassVariable2 = methodLocalFormalParameter;
+            private int mPrivateLocalClassVariable3 = methodLocalVariableFinal;
         }
         
         LocalClass lLocalClass = new LocalClass();

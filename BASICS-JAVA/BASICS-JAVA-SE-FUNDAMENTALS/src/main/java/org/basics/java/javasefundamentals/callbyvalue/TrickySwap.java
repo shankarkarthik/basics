@@ -24,8 +24,8 @@ public class TrickySwap {
 	  String[] arra = new String[2];
 	  arra[0] = null;
 	  arra[1] = "str";
-	  for ( String lString : arra ) {
-		  System.out.println( lString );
+	  for ( String string : arra ) {
+		  System.out.println( string );
 	  }
 	}
 }
